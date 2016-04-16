@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+  font-family: 'bradley_hand_Bold';
+  
+    src:url('../font/bradley_hand_Bold.eot') format('embedded-opentype');
+    src:url('../font/bradley_hand_Bold.eot?#iefix') format('embedded-opentype');
+    src:url('../font/bradley_hand_Bold.woff') format('woff');
+    src:local(※), url('../font/bradley_hand_Bold.woff') format('woff');
+    src: local('☺'), url('../font/bradley_hand_Bold.woff') format('woff');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
