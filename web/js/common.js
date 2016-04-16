@@ -19,13 +19,13 @@ $(function(){
 
 function headerEffect(){    
     var rollingH = $('.portfolio_wrap').offset();
-    var headerH = $('header').innerHeight();
+    var headerH = $('.header').innerHeight();
     //console.log('높이',rollingH.top);
     $(window).scroll(function(){
         if($(window).scrollTop() >= 10){
-            $('header').stop().fadeOut(500);
+            $('.header').stop().fadeOut(500);
         }else{
-            $('header').stop().fadeIn(500);
+            $('.header').stop().fadeIn(500);
         }
     })    
 }
