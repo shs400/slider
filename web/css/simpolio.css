@@ -3,10 +3,11 @@
 
 #simpolio { position:relative; z-index:90;}
 #simpolio .s_thum { position:absolute; left:0; top:0; float: left; padding:5px; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-#simpolio .s_thum img { width: 100%; }
+#simpolio .s_thum .ribbon { position:absolute; top:0; right:10px; z-index:80; }
 #simpolio .s_thum_view { overflow:hidden; position:relative; background:#fff; }
-#simpolio .s_thum_view .s_cover { position:absolute; left:0; top:0; width:100%; height:100%; }
-#simpolio .s_thum_view .s_cover a { display:block; width:100%; height:100%; text-align:center; padding:2px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+#simpolio .s_thum_view h3 { position:absolute; left:12%; top:14%; }
+#simpolio .s_thum_view h3 img { width:auto; }
+#simpolio .s_thum_view p { position:absolute; left:12%; bottom:19%; font-size:26px; color:#9a9a9a; line-height:1.2; }
 /*#simpolio .s_thum_view .s_cover a:hover {  background:rgba(193,97,97,0.6); box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}*/
 
 
