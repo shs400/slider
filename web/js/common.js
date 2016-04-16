@@ -12,6 +12,7 @@ $(function(){
     })
     $(window).resize(function(){
         headerEffect();
+        downArrow();
     })
     
 })
