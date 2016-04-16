@@ -1,7 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 @import url("bradley_hand.css");
-html, body { font-family: 'bradley_hand_Bold','돋움', '굴림', 'Dotum', 'Gulim', 'sans-serif'; -webkit-text-size-adjust:none;}
+
+html, body { min-width:320px; font-family: 'bradley_hand_Bold','돋움', '굴림', 'Dotum', 'Gulim', 'sans-serif'; -webkit-text-size-adjust:none;}
 a { text-decoration:none; color:#000; }
 .header {  width:100%; position:fixed; padding:28px 0 27px 53px; z-index:100; border-bottom:1px solid #a0a1a2; box-sizing:border-box; -webkit-box-sizing:border-box; }
 .header h1 { float:left; }
@@ -31,7 +32,7 @@ a { text-decoration:none; color:#000; }
 
 
 
-.container { width:100%; }
+.container { width:100%; color:#595959; }
 
 
 /* footer */
