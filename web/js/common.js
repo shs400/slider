@@ -5,6 +5,7 @@ $(function(){
     $(window).load(function(){
         headerEffect();
         downArrow();
+        open_menu();
         //portfolioOver();
         //portfolioTimer();   
         $('.open').fadeOut(500);
@@ -69,4 +70,16 @@ function portTimer(){
     }else{
         return i = 1;
     }
+}
+
+function open_menu(){
+    
+    $('.open_menu_bar').on('click',function(){
+        $('.open_menu').fadeIn(500);
+    });
+    
+    $('.menu_close').on('click',function(){
+        $('.open_menu').fadeOut(500);
+    });
+    
 }

@@ -4,6 +4,46 @@
 .wrap { position:relative;}
 .open { position:absolute; left:0; top:0; z-index:500; width:100%; height:100%; background:#fff;}
 
+.open_menu { display:none; position:fixed; left:0; top:0; z-index:150; width:100%; height:100%; background:#000; opacity:0.9; filter:alpha(opacity='90'); padding:30px; box-sizing:border-box; -webkit-box-sizing:border-box; }
+.open_menu .logo { position:absolute; left:50%; top:100px; margin-left:-23px; }
+.open_menu ul { position:absolute; left:0; top:50%; width:100%; margin-top:-60px; }
+.open_menu ul li { width:100%; line-height:2; }
+.open_menu ul li a { display:block; font-size:20px; color:#fff; text-align:center; }
+
+.menu_close{
+    float:right;
+	width: 22px;
+	height: 22px;
+	-webkit-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
+}
+.overlay-menu.active .menu_close{
+	-webkit-transform: rotate(0);
+	    -ms-transform: rotate(0);
+	        transform: rotate(0);
+}
+.menu_close:before,
+.menu_close:after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	top: 50%;
+	margin-top: -1px;
+	background-color: #fff;
+}
+.menu_close:before{
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+.menu_close:after{
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
 
 .visual_area { position:relative; width:100%; height:100vh; background:url(../images/main/main_img01.jpg) no-repeat center; background-size:cover; }
 .down_arrow { position:absolute; left:50%; bottom:10%; margin-left:-22px; }
@@ -21,8 +61,7 @@
 /* 메인 포트폴리오 영역 */
 .portfolio_wrap {}
 .portfolio { max-width:1440px; margin:0 auto; background:#f1eded; padding:70px; box-sizing:border-box; -webkit-box-sizing:border-box; }
-.portfolio h2 { width:24.0399%; min-width:150px; margin:0 auto; margin-bottom:50px; }
-.portfolio h2 img { width:100%; }
+.portfolio h2 { font-size:54px; color:#595959; text-align:center; margin:0 auto; margin-bottom:50px; }
 
 .bg { z-index: 50; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: #ee2d31;}
 .bg a { display:block; width:100%; height:100%; }

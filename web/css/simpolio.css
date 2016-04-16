@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-#simpolio { position:relative;}
+#simpolio { position:relative; z-index:90;}
 #simpolio .s_thum { position:absolute; left:0; top:0; float: left; padding:5px; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 #simpolio .s_thum img { width: 100%; }
 #simpolio .s_thum_view { overflow:hidden; position:relative; background:#fff; }
