@@ -34,8 +34,8 @@
 .header { padding:7px 0 7px 30px; }
 .header img { width:30px;}
 .header a.open_menu_bar { margin-top:10px; }
-.visual_txt span { font-size:40px;}
-.visual_txt span .sub_tit { font-size:20px; }
+.visual_txt span { width:70%; margin:0 auto; font-size:40px;}
+.visual_txt span .sub_tit { width:100%; font-size:16px; }
 #Simlider li span { font-size:15px;}
 .footer_area { padding:37px 70px 37px 70px; }
 .footer_title { width:100%; text-align:center; margin-bottom:20px; padding-top:0; }
