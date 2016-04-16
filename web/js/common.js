@@ -2,25 +2,23 @@
 var i = 1;
 $(function(){
     
-    $(window).load(function(){
+    $(window).on('load',function(){
         headerEffect();
         downArrow();
-        open_menu();
-        //portfolioOver();
-        //portfolioTimer();   
+        openMenu();
+        topBtn(); 
         $('.open').fadeOut(500);
-    })
-    $(window).resize(function(){
+    });
+    
+    $(window).on('resize',function(){
         headerEffect();
         downArrow();
-    })
+        topBtn();
+    });
     
 })
 
 function headerEffect(){    
-    var rollingH = $('.portfolio_wrap').offset();
-    var headerH = $('.header').innerHeight();
-    //console.log('높이',rollingH.top);
     $(window).scroll(function(){
         if($(window).scrollTop() >= 10){
             $('.header').stop().fadeOut(500);
@@ -73,7 +71,7 @@ function portTimer(){
     }
 }
 
-function open_menu(){
+function openMenu(){
     
     $('.open_menu_bar').on('click',function(){
         $('.open_menu').fadeIn(500);
@@ -82,5 +80,18 @@ function open_menu(){
     $('.menu_close').on('click',function(){
         $('.open_menu').fadeOut(500);
     });
+    
+}
+
+function topBtn(){
+    var portPosTop = $('.portfolio_wrap').offset().top;
+    console.log(portPosTop);
+    $(window).scroll(function(){
+        if($(window).scrollTop() >= portPosTop){
+            $('.top_btn').stop().fadeIn(300);
+        }else{
+            $('.top_btn').stop().fadeOut(300);
+        }
+    })  
     
 }
