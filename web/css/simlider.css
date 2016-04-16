@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+html { overflow-y:scroll;}
 
 #Simlider { overflow:hidden;  position:relative; left:0; top:0; z-index:10; }
 #Simlider li { position:relative; float:left; width:100%; }
