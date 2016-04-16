@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+#Simlider { overflow:hidden;  position:relative; left:0; top:0; z-index:10; }
+#Simlider li { position:relative; float:left; width:100%; }
+#Simlider li img { width:100%;}
+#Simlider li span { position:absolute; left:50%; top:50%; text-align:center; font-size:32px; color:#fff; font-weight:bold; line-height:1.5;}
+
+#Simlider2 { overflow:hidden;  position:relative; left:0; top:0; z-index:10; }
+#Simlider2 li {float:left; width:100%; }
+#Simlider2 li img { width:100%;}
+
+#sliderArea { width:100%; overflow:hidden; }
+#sliderWrap { position:relative; z-index:20; }
+
+.prev_btn { width:32px; height:61px; font-size:0px; position:absolute; left:10px; top:50%; margin-top:-25px; z-index:15; text-indent:-9999px; font-size:0; background:url(../images/simlider/prev_btn.png) no-repeat; text-indent:-9999px; cursor:pointer; opacity:0.5; }
+.next_btn { width:32px; height:61px; font-size:0px; position:absolute; right:10px; top:50%; margin-top:-25px; z-index:15; text-indent:-9999px; font-size:0; background:url(../images/simlider/next_btn.png) no-repeat; text-indent:-9999px; cursor:pointer; opacity:0.5; }
+
+.sim_page_wrap { position:absolute; left:50%; bottom:10%; z-index:20; }
+.page_area { float:left; overflow:hidden; }
+.page_area li { float:left; width:20px;text-indent:-9999px; height:20px; border-radius:50%; margin:0 5px; background:#fff; cursor:pointer; }
+.page_area li a { text-indent:-9999px; }
+.page_area li:hover { background:#93C0EF;}
+.page_area li.select { background:#93C0EF;}
+.sim_play_btn { float:left;}
+.sim_play_btn a { width:20px; height:20px; }
+.sim_play_btn a.s_play { display:block; text-indent:-9999px; background:#93C0EF; }
+.sim_play_btn a.s_stop { display:block; text-indent:-9999px; background:#fff; }

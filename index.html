@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>심현수</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="web/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="web/js/jquery.hoverdir.js"></script>
+<script type="text/javascript" src="web/js/simlider.js"></script>
+<script type="text/javascript" src="web/js/simpolio.js"></script>
+<script type="text/javascript" src="web/js/common.js"></script>
+<link href="web/css/reset.css?ver=1.0" rel="stylesheet" type="text/css" />
+<link href="web/css/simlider.css?ver=1.0" rel="stylesheet" type="text/css" />
+<link href="web/css/simpolio.css?ver=1.0" rel="stylesheet" type="text/css" />
+<link href="web/css/layout.css?ver=1.0" rel="stylesheet" type="text/css" />
+<link href="web/css/main.css?ver=1.0" rel="stylesheet" type="text/css" />
+<link href="web/css/media.css?ver=1.0" rel="stylesheet" type="text/css" />
+<body>
+<form name="frm" id="frm" method="post" onsubmit="return false;"><script>
+$(function(){
+		
+	var simpolio = new SimPolio('#simpolio');
+    
+    $(' .da-thumbs > li ').hoverdir({
+        hoverElem : '.bg',
+        hoverDelay : 100
+    });
+
+});
+</script>
+<div class="wrap">
+<div class="open"></div>
+	<header>
+		<h1><a href="index.php"><img src="web/images/common/s_logo.png" alt="Logo" /></a></h1>
+		<span class="css_bar"></span>
+	</header>
+
+	<section>
+		<div class="visual_area">
+            <div class="visual_txt">
+                <span>This is Website for SHS</span>            
+                <span class="sub_tit">He want to translate his job</span>
+            </div>
+            <a href="javascript:;" class="down_arrow"><img src="web/images/main/down_arrow.png" alt="" /></a>
+        </div>	
+		<div class="portfolio_wrap">
+			<div class="portfolio">
+				<h2><img src="web/images/main/portfolio_title.png" alt="portfolio" /></h2>
+			    <div class="portfolio_view">
+                    <ul id="simpolio" class="da-thumbs">
+                        <li class="s_thum">
+                            <div class="s_thum_view">
+                                <div class="bg">
+                                    <a href="#">Simlider ver 1.4</a>
+                                </div>
+                            </div>                            
+                        </li>
+                        <li class="s_thum">
+                            <div class="s_thum_view">
+                                <a href="javascript:;"></a>
+                                <div class="bg">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="s_thum">
+                            <div class="s_thum_view">
+                                <a href="javascript:;"></a>
+                                <div class="bg">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="s_thum">
+                            <div class="s_thum_view">
+                                <a href="javascript:;"></a>
+                                <div class="bg">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="s_thum">
+                            <div class="s_thum_view">
+                                <a href="javascript:;"></a>
+                                <div class="bg">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="s_thum">
+                            <div class="s_thum_view">
+                                <a href="javascript:;"></a>
+                                <div class="bg">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="s_thum">
+                            <div class="s_thum_view">
+                                <a href="javascript:;"></a>
+                                <div class="bg">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- //portfolio -->            
+		</div><!-- //portfolio_wrap -->
+	</section>
+	
+	<footer>
+		<div class="footer_area">
+			<div class="footer_title">
+				<img src="web/images/main/footer_title.png" alt="contact Info" />
+			</div>
+			<div class="footer_address">
+				<p>Address: 392-72, Hwagok-dong, Gangseo-gu, Seoul, Korea.</p>
+				<p>Email : tlagustn88@naver.com</p>
+				<p><span>Tel : 010 8914 5082</span> <span>Mobile : 010 8914 5082</span></p>
+			</div>
+		</div>
+	</footer>
+</div>
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {}
+a { text-decoration:none; color:#000; }
+header {  width:100%; position:fixed; padding:28px 0 27px 53px; z-index:100; border-bottom:1px solid #a0a1a2; box-sizing:border-box; -webkit-box-sizing:border-box; }
+header h1 { float:left; }
+header span.css_bar { float:right; margin-top:16px; }
+
+@keyframes bar {
+    from {background-color: #fff;}
+    to {background-color: yellow;}
+}
+
+header h1 {
+    -webkit-transition:all 0.7s ease-in-out;
+    -moz-transition:all 0.7s ease-in-out;
+    transition:all 0.7s ease-in-out;
+}
+
+header h1:hover {
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+
+
+.css_bar {
+	display: inline-block;
+	position: relative;
+	margin: 0 10px 3px 0;
+	padding: 0;
+	background: #fff;
+	width: 39px;
+	height: 3px;
+}
+
+.css_bar, .css_bar:before, .css_bar:after {
+	height: 3px;
+	float:right;
+    background-color: red; 
+	animation-name: bar; 
+	animation-duration: 2s; 
+}
+
+.css_bar:before, .css_bar:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 0;
+}
+
+.css_bar:before { margin-top: -8px; width:57px; }
+.css_bar:after { margin-top: 4px; width:22px; }
+
+
+section { width:100%; }
+
+
+/* footer */
+
+footer { background:#141414;}
+.footer_area { overflow:hidden; width:100%; max-width:1440px; margin:0 auto; padding:37px 70px 78px 70px; background:url(../images/main/footer_bg.jpg) no-repeat center center; background-size:cover; box-sizing:border-box; -webkit-box-sizing:border-box; }
+.footer_title { float:left; width:25%; text-align:left; padding-top:9px; }
+.footer_title img { width:71.26948%; }
+.footer_address { float:left; width:75%;}
+.footer_address p { font-size:24px; color:#fff; line-height:1.5;}
+

@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrap { position:relative;}
+.open { position:absolute; left:0; top:0; z-index:500; width:100%; height:100%; background:#fff;}
+
+
+.visual_area { position:relative; width:100%; height:100vh; background:url(../images/main/main_img01.jpg) no-repeat center; background-size:cover; }
+.down_arrow { position:absolute; left:50%; bottom:10%; margin-left:-22px; }
+.visual_txt { position:absolute; left:0%; top:50%; width:100%; margin-top:-78px; text-align:center; }
+.visual_txt span { display: block; font-size:64px; color:#fff;}
+.visual_txt span.sub_tit { font-size:26px; margin-top:37px; padding-top:30px; background:url(../images/main/sub_tit_bar.jpg) no-repeat top center; }
+
+/* 메인 롤링 영역 */
+.rolling_area { position:relative;overflow:hidden; width:100%;}
+.rolling_area ul {}
+.rolling_area ul li {}
+.rolling_area ul li img { display:block; width:100%; }
+
+
+/* 메인 포트폴리오 영역 */
+.portfolio_wrap {}
+.portfolio { max-width:1440px; margin:0 auto; background:#f1eded; padding:70px; box-sizing:border-box; -webkit-box-sizing:border-box; }
+.portfolio h2 { width:24.0399%; min-width:150px; margin:0 auto; margin-bottom:50px; }
+.portfolio h2 img { width:100%; }
+.portfolio a.more_btn { float:right; font-size:15px; color:#000; margin-top:-25px; }
+
+.bg { z-index: 50; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: #ee2d31;}
+.bg a { display:block; width:100%; height:100%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
