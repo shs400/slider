@@ -41,7 +41,7 @@
 .header img { width:30px;}
 .header a.open_menu_bar { margin-top:5px; }
 .open_menu .logo { top:20%; }
-.open_menu ul { margin-top:0; }
+.open_menu ul { margin-top:-30px; }
 .visual_txt span { width:70%; margin:0 auto; font-size:40px;}
 .visual_txt span.sub_tit { width:100%; font-size:16px; }
 .portfolio h2 { font-size:40px; }
