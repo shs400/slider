@@ -17,9 +17,12 @@
 
 }
 
-@media all and (min-width:617px) and (max-width:816px) {
+@media all and (min-width:617px) and (max-width:816px) and (orientation : portrait) {
 
 .header { padding:15px 0 15px 53px; }
+.header a.open_menu_bar { margin-top:5px; }
+.visual_txt span { width:70%; margin:0 auto; font-size:40px;}
+.visual_txt span.sub_tit { width:100%; font-size:16px; }
 #Simlider li span { font-size:20px;}
 .footer_title { width:100%; text-align:center; margin-bottom:20px; padding-top:0; }
 .footer_title img { width:40%; min-width:180px; }
@@ -29,7 +32,7 @@
 
 }
 
-@media all and (min-width:5px) and (max-width:616px) and (orientation : portrait)  {
+@media all and (min-width:5px) and (max-width:616px)  {
 
 .header { padding:7px 0 7px 30px; }
 .header img { width:30px;}
@@ -46,6 +49,7 @@
 .footer_address p { font-size:12px; text-align:center;}
 .footer_address p span { display:block; width:100%; }
 }
+
 
 
 

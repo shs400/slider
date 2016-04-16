@@ -67,7 +67,7 @@
 .portfolio h2 span:after { content:''; display:inline-block; vertical-align:top; width:43px; height:68px; margin-left:14px; background:url(../images/main/prot_right_bg.png) no-repeat right 14px; background-size:contain; }
 
 
-.bg { z-index: 50; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: #ee2d31;}
+.bg { z-index: 50; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background:#393939;}
 .bg a { display:block; width:100%; height:100%; }
 
 
