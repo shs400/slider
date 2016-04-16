@@ -3,64 +3,40 @@
 @import url("bradley_hand.css");
 html, body { font-family: 'bradley_hand_Bold','돋움', '굴림', 'Dotum', 'Gulim', 'sans-serif'; -webkit-text-size-adjust:none;}
 a { text-decoration:none; color:#000; }
-header {  width:100%; position:fixed; padding:28px 0 27px 53px; z-index:100; border-bottom:1px solid #a0a1a2; box-sizing:border-box; -webkit-box-sizing:border-box; }
-header h1 { float:left; }
-header a.css_bar { float:right; margin-top:16px; }
+.header {  width:100%; position:fixed; padding:28px 0 27px 53px; z-index:100; border-bottom:1px solid #a0a1a2; box-sizing:border-box; -webkit-box-sizing:border-box; }
+.header h1 { float:left; }
+.header h1 a { display:block; }
+.header a.css_bar { position:relative; float:right; width:30px; height:14px; margin:16px 30px 0 0; }
+.header a.css_bar span { position:absolute; right:0; height:2px; background:#fff; }
+.header a.css_bar span.sp01 { top:0; width:30px; }
+.header a.css_bar span.sp02 { top:50%; width:25px; margin-top:-1px; }
+.header a.css_bar span.sp03 { bottom:0; width:20px; }
 
 @keyframes bar {
     from {background-color: #fff;}
     to {background-color: yellow;}
 }
 
-header h1 {
+.header h1 {
     -webkit-transition:all 0.7s ease-in-out;
     -moz-transition:all 0.7s ease-in-out;
     transition:all 0.7s ease-in-out;
 }
 
-header h1:hover {
+.header h1:hover {
     -webkit-transform:rotate(360deg);
     -moz-transform:rotate(360deg);
     transform:rotate(360deg);
 }
 
 
-.css_bar {
-	display: inline-block;
-	position: relative;
-	margin: 0 10px 3px 0;
-	padding: 0;
-	background: #fff;
-	width: 39px;
-	height: 3px;
-}
 
-.css_bar, .css_bar:before, .css_bar:after {
-	height: 3px;
-	float:right;
-    background-color: red; 
-	animation-name: bar; 
-	animation-duration: 2s; 
-}
-
-.css_bar:before, .css_bar:after {
-	display: block;
-	content: "";
-	position: absolute;
-	top: 50%;
-	right: 0;
-}
-
-.css_bar:before { margin-top: -8px; width:57px; }
-.css_bar:after { margin-top: 4px; width:22px; }
-
-
-section { width:100%; }
+.container { width:100%; }
 
 
 /* footer */
 
-footer { background:#141414;}
+.footer { background:#141414;}
 .footer_area { overflow:hidden; width:100%; max-width:1440px; margin:0 auto; padding:37px 70px 78px 70px; background:url(../images/main/footer_bg.jpg) no-repeat center center; background-size:cover; box-sizing:border-box; -webkit-box-sizing:border-box; }
 .footer_title { float:left; width:25%; text-align:left; padding-top:9px; }
 .footer_title img { width:71.26948%; }

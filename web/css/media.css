@@ -3,13 +3,13 @@
 
 @media all and (min-width:957px) and (max-width:9999px) {
 
-header { padding:28px 0 27px 53px; }
+.header { padding:28px 0 27px 53px; }
 
 }
 
 @media all and (min-width:817px) and (max-width:956px) {
 
-header { padding:15px 0 15px 53px; }
+.header { padding:15px 0 15px 53px; }
 #Simlider li span { font-size:25px;}
 .footer_title { padding-top:3px; }
 .footer_title img { width:40%; min-width:140px; }
@@ -19,7 +19,7 @@ header { padding:15px 0 15px 53px; }
 
 @media all and (min-width:617px) and (max-width:816px) {
 
-header { padding:15px 0 15px 53px; }
+.header { padding:15px 0 15px 53px; }
 #Simlider li span { font-size:20px;}
 .footer_title { width:100%; text-align:center; margin-bottom:20px; padding-top:0; }
 .footer_title img { width:40%; min-width:180px; }
@@ -31,9 +31,9 @@ header { padding:15px 0 15px 53px; }
 
 @media all and (min-width:5px) and (max-width:616px) {
 
-header { padding:7px 0 7px 30px; }
-header img { width:30px;}
-header a.css_bar { margin-top:10px; }
+.header { padding:7px 0 7px 30px; }
+.header img { width:30px;}
+.header a.css_bar { margin-top:10px; }
 #Simlider li span { font-size:15px;}
 .footer_area { padding:37px 70px 37px 70px; }
 .footer_title { width:100%; text-align:center; margin-bottom:20px; padding-top:0; }
