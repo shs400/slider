@@ -5,7 +5,7 @@ html, body { font-family: 'bradley_hand_Bold','돋움', '굴림', 'Dotum', 'Guli
 a { text-decoration:none; color:#000; }
 header {  width:100%; position:fixed; padding:28px 0 27px 53px; z-index:100; border-bottom:1px solid #a0a1a2; box-sizing:border-box; -webkit-box-sizing:border-box; }
 header h1 { float:left; }
-header span.css_bar { float:right; margin-top:16px; }
+header a.css_bar { float:right; margin-top:16px; }
 
 @keyframes bar {
     from {background-color: #fff;}
