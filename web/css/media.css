@@ -29,7 +29,7 @@
 
 }
 
-@media all and (min-width:5px) and (max-width:616px) and (orientation : landscape)  {
+@media all and (min-width:5px) and (max-width:616px) and (orientation : portrait)  {
 
 .header { padding:7px 0 7px 30px; }
 .header img { width:30px;}
