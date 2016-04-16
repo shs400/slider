@@ -34,7 +34,8 @@
 
 @media all and (min-width:617px) and (max-width:816px) and (orientation : landscape) {
 
-.header { padding:15px 0 15px 53px; }
+.header { padding:7px 0 7px 30px; }
+.header img { width:30px;}
 .header a.open_menu_bar { margin-top:5px; }
 .visual_txt span { width:70%; margin:0 auto; font-size:30px;}
 .visual_txt span.sub_tit { width:100%; font-size:16px; }
