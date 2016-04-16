@@ -74,11 +74,16 @@ function portTimer(){
 function openMenu(){
     
     $('.open_menu_bar').on('click',function(){
-        $('.open_menu').fadeIn(500);
+        $('.open_menu').fadeIn(500,function(){
+            $('.open_menu .logo').stop().fadeIn(400).animate({'margin-top':'0'},400);
+            $('.open_menu ul').stop().animate({'height' : '120px'},300)
+        });
     });
     
     $('.menu_close').on('click',function(){
         $('.open_menu').fadeOut(500);
+        $('.open_menu .logo').hide().css({'margin-top' : '-34px'});
+            $('.open_menu ul').css({'height' : '0'})
     });
     
 }

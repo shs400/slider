@@ -25,7 +25,8 @@
 .header a.open_menu_bar { margin-top:5px; }
 .visual_txt span { width:70%; margin:0 auto; font-size:40px;}
 .visual_txt span.sub_tit { width:100%; font-size:16px; }
-#Simlider li span { font-size:20px;}
+.portfolio h2 { font-size:40px; }
+.portfolio h2 span:before, .portfolio h2 span:after { width:33px; height:40px; background-position-y:10px;}
 .footer_title { width:100%; text-align:center; padding-top:0; }
 .footer_title p { display: inline; }
 .footer_address { width:100%;}
@@ -41,7 +42,8 @@
 .header a.open_menu_bar { margin-top:5px; }
 .visual_txt span { width:70%; margin:0 auto; font-size:30px;}
 .visual_txt span.sub_tit { width:100%; font-size:16px; }
-#Simlider li span { font-size:20px;}
+.portfolio h2 { font-size:40px; }
+.portfolio h2 span:before, .portfolio h2 span:after { width:33px; height:40px; background-position-y:10px;}
 .footer_title { width:100%; text-align:center; padding-top:0; }
 .footer_title p { display:inline; }
 .footer_address { width:100%;}
