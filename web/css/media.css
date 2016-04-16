@@ -37,6 +37,15 @@
 
 .header { padding:7px 0 7px 30px; }
 .open_menu .logo { top:15%; }
+.visual_txt span { width:70%; margin:0 auto; font-size:40px;}
+.visual_txt span.sub_tit { width:100%; font-size:16px; }
+.portfolio h2 { font-size:40px; }
+.portfolio h2 span:before, .portfolio h2 span:after { width:33px; height:40px; background-position-y:10px;}
+.footer_title { width:100%; text-align:center; padding-top:0; }
+.footer_title p { display: inline; }
+.footer_address { width:100%;}
+.footer_address p { width:100%; font-size:15px; margin-left:0; text-align:center;}
+.footer_address p span { display:block; width:100%; }
 
 }
 
