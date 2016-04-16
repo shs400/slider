@@ -39,6 +39,7 @@
 
 .header { padding:7px 0 7px 30px; }
 .header img { width:30px;}
+.header a.open_menu_bar { margin-top:5px; }
 .open_menu .logo { top:15%; }
 .visual_txt span { width:70%; margin:0 auto; font-size:40px;}
 .visual_txt span.sub_tit { width:100%; font-size:16px; }
