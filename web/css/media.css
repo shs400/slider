@@ -5,7 +5,7 @@
 
 }
 
-@media all and (min-width:974px) and (max-width:1050px) {
+@media all and (min-width:957px) and (max-width:1050px) {
 
 .footer_address { float:left; }
 
@@ -14,12 +14,14 @@
 @media all and (min-width:817px) and (max-width:956px) {
 
 .header { padding:15px 0 15px 53px; }
+.visual_txt span { width:70%; margin:0 auto; font-size:45px;}
+.visual_txt span.sub_tit { width:100%; font-size:20px; }
 .footer_address { float:left; }
 .footer_address p { font-size:16px;}
 
 }
 
-@media all and (min-width:577px) and (max-width:816px) and (orientation : portrait) {
+@media all and (min-width:577px) and (max-width:816px) {
 
 .header { padding:15px 0 15px 53px; }
 .visual_txt span { width:70%; margin:0 auto; font-size:40px;}
