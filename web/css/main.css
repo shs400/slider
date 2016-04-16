@@ -62,6 +62,10 @@
 .portfolio_wrap {}
 .portfolio { max-width:1440px; margin:0 auto; background:#f1eded; padding:70px; box-sizing:border-box; -webkit-box-sizing:border-box; }
 .portfolio h2 { font-size:54px; color:#595959; text-align:center; margin:0 auto; margin-bottom:50px; }
+.portfolio h2 span { vertical-align:top; }
+.portfolio h2 span:before { content:''; display:inline-block; vertical-align:top; width:43px; height:68px; margin-right:14px; background:url(../images/main/prot_left_bg.png) no-repeat left 14px; background-size:contain; }
+.portfolio h2 span:after { content:''; display:inline-block; vertical-align:top; width:43px; height:68px; margin-left:14px; background:url(../images/main/prot_right_bg.png) no-repeat right 14px; background-size:contain; }
+
 
 .bg { z-index: 50; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: #ee2d31;}
 .bg a { display:block; width:100%; height:100%; }
