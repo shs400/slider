@@ -5,7 +5,7 @@
 .open { position:absolute; left:0; top:0; z-index:500; width:100%; height:100%; background:#fff;}
 
 .open_menu { display:none; position:fixed; left:0; top:0; z-index:150; width:100%; height:100%; background:#000; opacity:0.9; filter:alpha(opacity='90'); padding:30px; box-sizing:border-box; -webkit-box-sizing:border-box; }
-.open_menu .logo { display:none; position:absolute; left:50%; top:100px; margin-left:-23px; margin-top:-34px; }
+.open_menu .logo { display:none; position:absolute; left:50%; top:25%; margin-left:-23px; margin-top:-34px; }
 .open_menu ul { overflow:hidden; position:absolute; left:0; top:50%; width:100%; height:0; margin-top:-60px; }
 .open_menu ul li { width:100%; line-height:2; }
 .open_menu ul li a { display:block; font-size:20px; color:#fff; text-align:center; }
