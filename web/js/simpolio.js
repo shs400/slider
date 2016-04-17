@@ -1,4 +1,4 @@
-// SimPolio_ver 1.3 16.04.09
+// SimPolio_ver 1.3 16.04.16
 
 
 var SimPolio = (function(){

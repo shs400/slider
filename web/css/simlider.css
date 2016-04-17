@@ -23,11 +23,11 @@ html { overflow-y:scroll;}
 
 .sim_page_wrap { position:absolute; left:50%; bottom:10%; z-index:20; }
 .page_area { float:left; overflow:hidden; }
-.page_area li { float:left; width:20px;text-indent:-9999px; height:20px; border-radius:50%; margin:0 5px; background:#fff; cursor:pointer; }
+.page_area li { float:left; width:19px;text-indent:-9999px; height:19px; border-radius:50%; margin:0 5px; background:#fff; cursor:pointer; }
 .page_area li a { text-indent:-9999px; }
 .page_area li:hover { background:#93C0EF;}
 .page_area li.select { background:#93C0EF;}
 .sim_play_btn { float:left;}
-.sim_play_btn a { width:20px; height:20px; }
-.sim_play_btn a.s_play { display:block; text-indent:-9999px; background:#93C0EF; }
-.sim_play_btn a.s_stop { display:block; text-indent:-9999px; background:#fff; }
+.sim_play_btn a { width:15px; height:19px; margin-left:5px; background: url(../images/simlider/btn_play.png) no-repeat 100% 0; }
+.sim_play_btn a.s_play { display:block; text-indent:-9999px; background-position: 0 1px; }
+.sim_play_btn a.s_stop { display:block; text-indent:-9999px; background-position: 100% 1px; }
