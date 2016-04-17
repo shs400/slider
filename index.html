@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="web/js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="web/js/jquery.hoverdir.js"></script>
-<script type="text/javascript" src="web/js/simlider.js"></script>
 <script type="text/javascript" src="web/js/simpolio.js"></script>
 <script type="text/javascript" src="web/js/common.js"></script>
 <link href="web/css/reset.css?ver=1.0" rel="stylesheet" type="text/css" />
@@ -21,7 +20,6 @@
 <form name="frm" id="frm" method="post" onsubmit="return false;">
 <script>
 $(function(){
-    $('.view_loading').hide();
 	var simpolio = new SimPolio('#simpolio');
     
     $(' .da-thumbs > li ').hoverdir({
@@ -30,9 +28,6 @@ $(function(){
     });
 });
 </script>
-<div class="view_loading">
-    <img src="web/images/common/view_loading.gif" alt="페이지 로딩" />
-</div>
 <div class="wrap">
 <div class="open"></div>
 	<div class="header">
@@ -88,7 +83,7 @@ $(function(){
                                 <h3><img src="web/images/portfolio/portfolio_02_off.jpg" alt="Simpolio" /></h3>
                                 <p>Simpolio</p>                                
                                 <div class="bg">
-                                    <a href="simlider.html">
+                                    <a href="simpolio.html">
                                         <h3><img src="web/images/portfolio/portfolio_02_on.jpg" alt="Simpolio" /></h3>
                                         <p>Simpolio</p>
                                     </a>

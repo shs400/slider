@@ -44,15 +44,8 @@
 .visual_txt span { display: block; font-size:64px; color:#fff;}
 .visual_txt span.sub_tit { font-size:26px; margin-top:37px; padding-top:30px; background:url(../images/main/sub_tit_bar.jpg) no-repeat top center; }
 
-/* 메인 롤링 영역 */
-.rolling_area { position:relative;overflow:hidden; width:100%;}
-.rolling_area ul {}
-.rolling_area ul li {}
-.rolling_area ul li img { display:block; width:100%; }
-
 
 /* 메인 포트폴리오 영역 */
-.portfolio_wrap {}
 .portfolio { max-width:1440px; margin:0 auto; background:#f1eded; padding:70px; box-sizing:border-box; -webkit-box-sizing:border-box; }
 .portfolio h2 { font-size:54px; text-align:center; margin:0 auto; margin-bottom:50px; }
 .portfolio h2 span { vertical-align:top; }

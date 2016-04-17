@@ -2,6 +2,10 @@
 /* CSS Document */
 html { overflow-y:scroll;}
 
+/* 롤링 영역 */
+.rolling_area { position:relative;overflow:hidden; width:100%;}
+.rolling_area ul li img { display:block; width:100%; }
+
 #Simlider { overflow:hidden;  position:relative; left:0; top:0; z-index:10; }
 #Simlider li { position:relative; float:left; width:100%; }
 #Simlider li img { width:100%;}

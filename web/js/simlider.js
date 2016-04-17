@@ -1,8 +1,7 @@
 // Simlider_ver 1.4 16.04.13
 
 // 16.04.05 - 루프기능추가 ( limited 기능과 토글해서 사용가능 )
-// 16.04.06 - 이미지 한개 등록시 기능 추가 , 기타오류 수정(page버튼 오버기능 삭제, page버튼 글릭시 타이머 해제 추가)
-// 16.04.13 - 슬라이더 위에 text 삽입 추가
+// 16.04.06 - 이미지 한개 등록시 기능 추가 , 기타오류 수정( page버튼 글릭시 타이머 해제 추가)
 
 var Simlider = (function(){
     
@@ -43,12 +42,9 @@ var Simlider = (function(){
         // this.width = $(window).width(); - 실행문 영역보다 위에서 선언하면 마크업상 ul li가 아래로 생성된후 width값을 가져오기 때문에 먼저 li가 일렬로 보이도록 셋팅을해주고 width값을 불러와야한다. 
         this.slider.css({'left' : -this.width}) // 초기 위치값
         this.moveVal = -this.width; // 움직임값 초기화
-        this.dir; // 없어도될것같은데 혹시몰라서...
+        this.dir; 
         this.nowPlay = false;
         this.pageLiLength = this.liLength-2; // 페이지 li갯수는 슬라이드 이미지 갯수가 클론으로 인하여 +2됬으므로 -2 해준다.
-        // console.log('현재 인덱스',this.nowIdx);
-        // console.log('page 인덱스',this.pageIdx);        
-        // console.log('이미지갯수',':',this.liLength)
         
         this.oneImg(); // 이미지 하나일때 left 위치값때문에 제일 하단에 선언
         this.textarea();
@@ -108,7 +104,6 @@ var Simlider = (function(){
             _this.width = $(window).width();
             _this.moveVal = -(_this.width * _this.nowIdx); //  현재의 width값과 index 값을 곱하여 resize 후 움직일 값을 저장함 ( 물론 움직임은 left 기준에 -로 움직이니 미리 -를 넣어줌)
             _this.slider.css({'left' : _this.moveVal});
-            //console.log('현재 인덱스',_this.nowIdx);
             _this.textarea();            
         })
         
@@ -125,12 +120,10 @@ var Simlider = (function(){
         //this.moveVal = this.slider.find('li').width(); // 하나의  li갯수만큼 이동하기 때문에 이동값으로 li의 width값 저장
     }; // 초기 셋팅 메서드
     
-    Simlider.prototype.textarea = function(){  
-        console.log('갯수',this.liLength);      
+    Simlider.prototype.textarea = function(){   
         for(var i =0; i < this.liLength; i++){
             var spanWidth = this.slider.find('li:eq('+i+') span').width();
             var spanHeight = this.slider.find('li:eq('+i+') span').height();
-            console.log(i,'번째높이',spanHeight);
             this.slider.find('li:eq('+i+') span').css({
                 'margin-left' : -spanWidth/2,
                 'margin-top' : -spanHeight/2
@@ -165,14 +158,11 @@ var Simlider = (function(){
             _this.pageOn(pageIdx);
             clearInterval(_this.setInter); // page 버튼 클릭시 타이머 정지
             _this.playBtn.find('a').attr({'class':'s_play'}).html('정지');  
-            //console.log('현재 인덱스',_this.nowIdx);            
-            //console.log('클릭한 인덱스',pageIdx);
         })
     }
 
     Simlider.prototype.pageOn = function(idx){
         var realIdx = idx - 1
-        //console.log(realIdx);
         this.pageUl.find('li').removeClass('select');
         this.pageUl.find('li:eq('+realIdx+')').addClass('select');
     }
@@ -212,7 +202,6 @@ var Simlider = (function(){
     
     Simlider.prototype.loopMove = function(dir,loop){
         var _this = this;    
-        console.log('루프값',':',loop);
         if(dir === "right" && loop === "on"){
             this.overlapHack(function(){
                 _this.nowPlay = true;
