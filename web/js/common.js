@@ -6,8 +6,15 @@ $(function(){
         headerEffect();
         downArrow();
         openMenu();
+        var portPosTop = $('.portfolio_wrap').offset().top;
+        if($(window).scrollTop() >= portPosTop){
+            $('.top_btn').stop().fadeIn(300);
+        }else{
+            $('.top_btn').stop().fadeOut(300);
+        }
         topBtn(); 
         $('.open').fadeOut(500);
+        
     });
     
     $(window).on('resize',function(){
