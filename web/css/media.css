@@ -61,9 +61,9 @@
 .header a.open_menu_bar { margin-top:5px; }
 .visual_txt span { width:70%; margin:0 auto; font-size:40px;}
 .visual_txt span.sub_tit { width:100%; font-size:16px; }
-.portfolio h2 { font-size:30px; }
-.portfolio h2 span:before { width:30px; height:44px; margin-right:10px; background-position-y:7px; }
-.portfolio h2 span:after { width:30px; height:44px; margin-left:10px; background-position-y:7px; }
+.portfolio h2 { font-size:28px; }
+.portfolio h2 span:before { width:30px; height:35px; margin-right:10px; background-position-y:7px; }
+.portfolio h2 span:after { width:30px; height:35px; margin-left:10px; background-position-y:7px; }
 .footer_area { padding:37px 70px 37px 70px; }
 .footer_title { width:100%; text-align:center; padding-top:0; }
 .footer_title p { display:inline; font-size:24px; }
