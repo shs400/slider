@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/angular-chart.css">
+    <script src="libs/chart.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-chart.js"></script>
+    <script src="libs/angular-resource.js"></script>
+    <script src="libs/angular-route.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+    <button class="btn btn-default "
+    ng-class="{'btn-primary' : $index === nowIndex }"
+    ng-click="btnClick($index)"
+    ng-repeat="city in citys track by $index">{{city.name}}</button>
+    
+    <canvas class="chart chart-line" ng-if="nowIndex === 0"
+    chart-data="data"
+    chart-labels='labels'
+    chart-series='series'
+    chart-legend='legend'>
+    </canvas>
+    
+    <canvas class="chart chart-line" ng-if="nowIndex === 1"
+    chart-data="data"
+    chart-labels='labels'
+    chart-series='series'
+    chart-legend='legend'>
+    </canvas>
+    
+    <canvas class="chart chart-line" ng-if="nowIndex === 2"
+    chart-data="data"
+    chart-labels='labels'
+    chart-series='series'
+    chart-legend='legend'>
+    </canvas>
+    
+    <canvas class="chart chart-line" ng-if="nowIndex === 3"
+    chart-data="data"
+    chart-labels='labels'
+    chart-series='series'
+    chart-legend='legend'>
+    </canvas>
+</body>
+</html>
