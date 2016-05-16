@@ -297,14 +297,14 @@ var Simlider = (function(){
     Simlider.prototype.playClick = function(){
         var _this = this;
         this.playBtn.on('click',function(){
-            if($(this).find('a').attr('class') == 's_play'){
+            if($(this).find('a').attr('class') == 's_stop'){
                 _this.setInter = setInterval(function(){
                     _this.loopMove('right',_this.settings.infiniteLoop);
                 },_this.settings.playSpeed);
-                $(this).find('a').attr({'class':'s_stop'}).html('정지');
+                $(this).find('a').attr({'class':'s_play'}).html('재생');
             }else{
                 clearInterval(_this.setInter);
-                $(this).find('a').attr({'class':'s_play'}).html('재생');
+                $(this).find('a').attr({'class':'s_stop'}).html('정지');
             }  
         });
     } // 재생버튼 클릭시
