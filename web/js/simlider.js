@@ -290,7 +290,7 @@ var Simlider = (function(){
     
         
     Simlider.prototype.playSet = function(){
-        this.playBtn = $('<span class=\'sim_play_btn\'><a href=\'javascript:;\' class=\'s_play\'>재생</a></span>');
+        this.playBtn = $('<span class=\'sim_play_btn\'><a href=\'javascript:;\' class=\'s_stop\'>재생</a></span>');
         this.pageWrap.append(this.playBtn);
     } // 재생버튼 셋팅
     
