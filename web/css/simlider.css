@@ -28,6 +28,6 @@ html { overflow-y:scroll;}
 .page_area li:hover { background:#93C0EF;}
 .page_area li.select { background:#93C0EF;}
 .sim_play_btn { float:left;}
-.sim_play_btn a { width:15px; height:19px; margin-left:5px; background: url(../images/simlider/btn_stop.png) no-repeat 100% 0; }
+.sim_play_btn a { width:15px; height:19px; margin-left:5px; background: url(../images/simlider/btn_play.png) no-repeat 100% 0; }
 .sim_play_btn a.s_play { display:block; text-indent:-9999px; background-position: 0 1px; }
 .sim_play_btn a.s_stop { display:block; text-indent:-9999px; background-position: 100% 1px; }
