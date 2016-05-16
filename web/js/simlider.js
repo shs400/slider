@@ -301,10 +301,10 @@ var Simlider = (function(){
                 _this.setInter = setInterval(function(){
                     _this.loopMove('right',_this.settings.infiniteLoop);
                 },_this.settings.playSpeed);
-                $(this).find('a').attr({'class':'s_play'}).html('재생');
+                $(this).find('a').attr({'class':'s_play'}).html('정지');
             }else{
                 clearInterval(_this.setInter);
-                $(this).find('a').attr({'class':'s_stop'}).html('정지');
+                $(this).find('a').attr({'class':'s_stop'}).html('재생');
             }  
         });
     } // 재생버튼 클릭시
