@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<HTML ng-app="myApp">
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <META charset="UTF-8">
+ <link rel="stylesheet" href="bootstrap.min.css">
+ <link rel="stylesheet" href="angular-chart.css">
+ <script src="chart.js"></script>
+ <script src="angular.min.js"></script>
+ <script src="angular-chart.js"></script>
+ <script src="app.js"></script>
+ <style>
+     .on { background:yellow;}
+ </style>
+ </HEAD>
+<!--
+    -->
+
+ <BODY ng-controller="MainCtrl">   
+     
+     
+     <p></p>
+    <div class="container" ng-controller="ChartCtrl">
+        <p>{{bar.name}}</p>
+        <button class="btn btn-default"  ng-class="{'btn-primary': sw{{$index}}}" ng-click="toggle($index)"
+        ng-repeat="barType in barTypes track by $index">{{barType.type}}</button>
+        
+        <div>
+        <canvas class="chart chart-line" ng-if="sw0"
+        chart-data="data"
+        chart-labels='labels'
+        chart-series='series'
+        chart-legend='legend'>
+        </canvas>
+        
+        <canvas class="chart chart-bar"  ng-if="sw1"
+        chart-data="data"
+        chart-labels='labels'
+        chart-series='series'
+        chart-legend='legend'>
+        </canvas>
+        
+        <canvas class="chart chart-doughnut" ng-if="sw2"
+        chart-data="oneData"
+        chart-labels='labels'
+        chart-series='series'
+        chart-legend='legend'>
+        </canvas>
+        
+        <canvas class="chart chart-radar" ng-if="sw3"
+        chart-data="data"
+        chart-labels='labels'
+        chart-series='series'
+        chart-legend='legend'>
+        </canvas>
+        
+        <canvas class="chart chart-polar-area" ng-if="sw4"
+        chart-data="oneData"
+        chart-labels='labels'
+        chart-series='series'
+        chart-legend='legend'>
+        </canvas>
+        </div>
+    </div>    
+ </BODY>
+</HTML>

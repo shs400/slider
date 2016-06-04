@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>homework</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+* { margin:0; padding:0; }
+h1 { font-size:20px; }
+input { width:398px; margin:0; padding:0; font-size:16px; }
+div { width:402px; }
+div p { background:#337ab8; color:#fff; border-top-left-radius:5px; border-top-right-radius:5px; padding:5px;  }
+div ul { border:1px solid #ccc; boredr-radius:5px; border-top:0; padding:10px; }
+div ul li { list-style:none; overflow:hidden; border:1px solid #ccc; border-top:0; padding:5px; }
+div ul li:first-child { border-top:1px solid #ccc; }
+div ul li a { color:#337ab8; float:left; text-decoration:none;  }
+div ul li a:active { color:#337ab8;}
+div ul li a:hover{ border-bottom:1px solid #337ab8; }
+div ul li button { float:right; background:#d8514c; color:#fff; border:0; font-size:10px; padding:5px; border-radius:5px; }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script>
+var myApp = angular.module('myApp',[]).controller('mainCtrl',mainCtrl);
+
+function mainCtrl($scope){
+	/*$scope.favorite = [
+		{ name : 'http://www.naver.com' },
+		{ name : 'http://www.daum.net' },
+		{ name : 'http://www.google.co.kr' }
+	]
+	*/
+	
+	var storageData = localStorage.getItem('favorite')
+	var parsedData = JSON.parse(storageData);
+
+	$scope.favorite = parsedData || [];
+
+
+	$scope.add = function(txt){
+		txt.name ? $scope.favorite.push({ name : txt.name}) : '';
+		localStorage.setItem('favorite',JSON.stringify($scope.favorite));
+		txt.name = "";
+	}
+
+	$scope.remove = function(index){
+		$scope.favorite.splice(index, 1);
+		localStorage.setItem('favorite',JSON.stringify($scope.favorite));
+	}
+}
+</script>
+</head>
+ <body ng-controller="mainCtrl">
+ <h1>즐겨찾기</h1>
+	<form ng-submit="add(txt)">
+		<input type="text" id="btn" ng-model="txt.name">
+	</form>	
+	<div>		
+		<p>등록된 개수 : {{favorite.length}}</p>
+		<ul>
+			<li ng-repeat="key in favorite track by $index"><a href="{{key.name}}">
+				{{key.name}}</a><button ng-click="remove($index)">삭제</button>
+			</li>
+		</ul>	
+	</div>
+ </body>
+</html>

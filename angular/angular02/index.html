@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<HTML ng-app="myApp">
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <META charset="UTF-8">
+ <link rel="stylesheet" href="bootstrap.min.css">
+ <link rel="stylesheet" href="angular-chart.css">
+ <script src="chart.js"></script>
+ <!--<script src="angular.min.js"></script>-->
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+ <script src="angular-chart.js"></script>
+ <!--<script src="app.js"></script>-->
+ <script>
+var myApp = angular.module('myApp',['chart.js'])
+.controller('MainCtrl',function($scope){    
+})
+.controller('ChartCtrl',function($scope){
+    
+    $scope.bar = [] || '';
+    
+    $scope.add = [{
+         name : 'chart-line'
+     },{
+         name : 'chart-bar'
+     },{
+         name : 'chart-doughnut'
+     },{
+         name : 'chart-radar'
+     },{
+         name : 'chart-doughnut'
+     }]
+     
+    $scope.sw0 = true;
+    $scope.toggle = function(idx){
+        var a = JSON.stringify($scope.add[idx]);
+        var b = JSON.parse(a);
+        
+        $scope.sw0 = false;
+        $scope.sw1 = false;
+        $scope.sw2 = false;
+        $scope.sw3 = false;    
+        $scope.sw4 = false;
+    
+        if(idx == 0){
+            $scope.sw0 = true;    
+        }else if(idx==1){
+            $scope.sw1 = true;         
+        }else if(idx==2){
+            $scope.sw2 = true;         
+        }else if(idx==3){
+            $scope.sw3 = true;         
+        }else if(idx==4){
+            $scope.sw4 = true;         
+        }
+        $scope.bar = b || [];
+    }
+    
+    $scope.data = [
+        [11,22,33,44,55,66,77],
+        [43,1,57,45,88,34,64]
+    ]
+    $scope.oneData = [44,11,345,22,11,111,43];
+    $scope.labels = ['월','화','수','목','금','토','일']
+    $scope.series = ['A','B','C'];
+    $scope.legend = true;
+    
+    
+    $scope.barTypes = [{
+        type : "라인"
+    },{
+        type : '바'
+    },{
+        type : '도넛'
+    },{
+        type : '레이더'
+    },{
+        type : '폴라'
+    }]
+})
+ </script>
+ </HEAD>
+
+ <BODY ng-controller="MainCtrl"> 
+    <div class="container" ng-controller="ChartCtrl">
+        <!--<p>{{bar.name}}</p>-->
+        <button class="btn btn-default"  ng-class="{'btn-primary': sw{{$index}}}" ng-click="toggle($index)"
+        ng-repeat="barType in barTypes track by $index">{{barType.type}}</button>
+        
+        <div>
+        <canvas class="chart chart-line" ng-if="sw0"
+        chart-data="data"
+        chart-labels='labels'
+        chart-series='series'
+        chart-legend='legend'>
+        </canvas>
+        
+        <canvas class="chart chart-bar"  ng-if="sw1"
+        chart-data="data"
+        chart-labels='labels'
+        chart-series='series'
+        chart-legend='legend'>
+        </canvas>
+        
+        <canvas class="chart chart-doughnut" ng-if="sw2"
+        chart-data="oneData"
+        chart-labels='labels'
+        chart-series='series'
+        chart-legend='legend'>
+        </canvas>
+        
+        <canvas class="chart chart-radar" ng-if="sw3"
+        chart-data="data"
+        chart-labels='labels'
+        chart-series='series'
+        chart-legend='legend'>
+        </canvas>
+        
+        <canvas class="chart chart-polar-area" ng-if="sw4"
+        chart-data="oneData"
+        chart-labels='labels'
+        chart-series='series'
+        chart-legend='legend'>
+        </canvas>
+        </div>
+    </div>    
+ </BODY>
+</HTML>
